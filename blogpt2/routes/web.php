@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('prova', function () {
-    return view('welcome');
+// Route::get('prova', function () {
+//     return view('welcome');
+// });
+
+Route::get('/prova', function () {
+    $data = [
+      "Serie_A" => [
+        "Inter",
+        "Milan",
+        "Juventus",
+        "Lazio",
+        "Atalanta",
+        "Roma",
+        "Udinese"
+      ]
+    ];
+    return view('prova', $data);
 });

@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    ciao web
+    <h1>Classifica Serie A 2020-2021</h1>
+    <ul>
+      @foreach($Serie_A as $squadra)
+        <li> {{$squadra}} </li>
+      @endforeach
+    </ul>
 </body>
 </html>
